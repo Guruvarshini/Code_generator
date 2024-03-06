@@ -1,9 +1,11 @@
-const { OpenAI } = require('openai');
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-require('dotenv').config();
-const axios=require('axios');
+import { OpenAI } from 'openai';
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import dotenv from 'dotenv';
+
+// Load environment variables from .env file
+dotenv.config();
 
 const PORT =  3000;
 const app = express();
