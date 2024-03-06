@@ -13,7 +13,7 @@ inputField.addEventListener("keypress", function(event) {
 axios.defaults.withCredentials = true;
 function sendMessage() {
   const message = inputField.value;
-  fetch('https://code-generator-dlsg.vercel.app/message', {
+  fetch('https://code-generator-ju44.vercel.app/message', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
