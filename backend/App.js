@@ -10,13 +10,11 @@ dotenv.config();
 const PORT =  3000;
 const app = express();
 app.use(bodyParser.json());
-app.use(cors(
-    {
-        origin: ["https://code-generator-tja4.vercel.app"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-));
+app.use(cors({
+  origin: "https://code-generator-vert.vercel.app",
+  methods: ["POST", "GET"],
+  credentials: true
+}));
 
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_KEY
