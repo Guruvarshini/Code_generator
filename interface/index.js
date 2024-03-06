@@ -9,10 +9,10 @@ inputField.addEventListener("keypress", function(event) {
     sendMessage();
   }
 });
-
+axios.defaults.withCredentials = true;
 function sendMessage() {
   const message = inputField.value;
-  fetch('http://localhost:3000/message', {
+  fetch('https://code-generator-dlsg.vercel.app/message', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
