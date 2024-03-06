@@ -1,4 +1,4 @@
-import axios from 'axios';
+
 const inputField = document.getElementById("inputText"); // Changed class to ID
 const button = document.getElementById("generate"); // Changed class to ID
 const outputTextarea = document.getElementById("outputText"); // Changed class to ID
